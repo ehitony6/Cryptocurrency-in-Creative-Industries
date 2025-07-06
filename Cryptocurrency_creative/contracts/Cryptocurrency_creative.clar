@@ -263,8 +263,7 @@
         )
       (begin
         ;; Transfer STX from buyer to seller
-        (try! (stx-transfer? seller-amount tx-sender seller))
-        
+        (try! (stx-transfer? seller-amount tx-sender seller)) 
         ;; Pay platform fee
         (try! (stx-transfer? fee-amount tx-sender CONTRACT_OWNER))
         
