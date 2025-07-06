@@ -66,7 +66,6 @@
     verification-status: bool
   }
 )
-
 ;; Events
 (define-private (emit-work-created (work-id uint) (creator principal))
   (print { event: "work-created", work-id: work-id, creator: creator })
