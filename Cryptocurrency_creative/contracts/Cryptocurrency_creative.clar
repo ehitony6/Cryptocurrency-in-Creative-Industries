@@ -31,7 +31,6 @@
     is-active: bool
   }
 )
-
 ;; Ownership tracking
 (define-map work-ownership
   { work-id: uint, owner: principal }
