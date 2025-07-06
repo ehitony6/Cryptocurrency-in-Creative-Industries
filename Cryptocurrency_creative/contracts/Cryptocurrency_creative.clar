@@ -291,8 +291,7 @@
             { work-id: work-id, seller: seller }
             (merge listing { quantity: (- (get quantity listing) quantity) })
           )
-        )
-        
+        )  
         ;; Update creator earnings
         (match (map-get? creator-profiles { creator: (get creator work) })
           profile (map-set creator-profiles
